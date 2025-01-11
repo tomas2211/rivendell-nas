@@ -16,4 +16,4 @@ This repo describes all settings on my NAS server (mostly for my reference).
 
 1. Openmediavault 7.4.17
 2. [powertop auto-tune](01-powertop.md)
-3. HDD spindown
+3. [HDD spindown](02-hdd-spindown.md)
