@@ -1,6 +1,12 @@
 # Powertop setup
 
-Utility powertop (2.15) built and installed from sources https://github.com/fenrus75/powertop.
+Utility powertop built and installed from sources https://github.com/fenrus75/powertop - on master branch.
+
+Built using meson:
+1. `sudo apt install meson libracefs-dev libtraceevent-dev` - missing dependencies
+2. `meson setup builddir`
+3. `cd builddir && ninja`
+4. `ninja install`
 
 See `~/repos/powertop`.
 
