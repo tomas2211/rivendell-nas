@@ -21,7 +21,7 @@ alias ll='ls -lah'
 alias la='ls -Ah'
 alias l='ls -CF'
 
-# systemd bus - these variables are not set when `su <user>`
+# systemd bus - these variables are not set when su <user>
 export XDG_RUNTIME_DIR=/run/user/$(id -u)
 export DBUS_SESSION_BUS_ADDRESS=unix:path=${XDG_RUNTIME_DIR}/bus
 
