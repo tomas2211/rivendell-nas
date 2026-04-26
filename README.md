@@ -14,6 +14,10 @@ This repo describes all settings on my NAS server (mostly for my reference).
 
 ## Setup
 
-1. Openmediavault 7.4.17
+1. Debian trixie
 2. [powertop auto-tune](01-powertop.md)
 3. [HDD spindown](02-hdd-spindown.md)
+4. [Podman](03-podman.md)
+5. [Home Assistant](04-homeassistant.md)
+6. TBD: Certbot
+7. TBD: Jellyfin
