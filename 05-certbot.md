@@ -44,7 +44,6 @@ ContainerName=certbot
 Volume=%h/cloudflare:/opt/cloudflare:Z,ro
 Volume=%h/letsencrypt:/etc/letsencrypt:Z
 Volume=%h/letsencrypt/log:/var/log/letsencrypt:Z
-#Volume=%h/deploy-hooks:/etc/letsencrypt/renewal-hooks/deploy:Z,ro
 Exec=renew
 
 [Service]
@@ -80,4 +79,6 @@ To enable the timer, run: `systemctl --user enable --now certbot.timer`
 
 To verify that the renew unit is loaded: `systemctl --user status certbot-renew`
 
+Place shell scripts to deploy the certificates in `~/letsencrypt/renewal-hooks/deploy`. Pro tip: shell in the podman container may struggle with shebang. It's better not to specify it.
 
+Use the renew command from the top with `--dry-run --run-deploy-hooks --no-random-sleep-on-renew` to verify that deploy hooks work.
